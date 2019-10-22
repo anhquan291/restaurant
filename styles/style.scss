@@ -1,0 +1,96 @@
+/* Setup basics CSS */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+a {
+  text-decoration: underline;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  cursor: pointer;
+}
+input,
+textarea,
+button {
+  outline: none;
+  box-shadow: none;
+  font-family: "Lato", sans-serif;
+}
+
+/* color */
+$color-orange: #e7a331;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-footer: #0d0d0d;
+
+/* Your style start from here */
+
+/* Header */
+.container-header {
+  width: 150rem;
+  height: 80rem;
+  background-color: red;
+  position: relative;
+  margin: 0 auto;
+  .logo {
+    max-width: 41rem;
+    height: 20.5rem;
+    position: absolute;
+    z-index: 1;
+    left: 12.5rem;
+  }
+  .contact {
+    height: 3rem;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $color-white;
+    .clock {
+      margin-right: 4.5rem;
+      .clock-icon {
+        color: $color-orange;
+      }
+    }
+    .phone {
+      .phone-icon {
+        color: $color-orange;
+      }
+    }
+    .social {
+      right: 16.5rem;
+      color: $color-orange;
+      position: absolute;
+      .social-item {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  .menu {
+    font-size: 17px;
+    ul {
+      list-style: none;
+      display: inline-block;
+      li {
+      }
+    }
+  }
+}

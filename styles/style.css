@@ -5,31 +5,106 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
+
 html {
-	font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%;
+  /* 1rem = 10px */
 }
+
 body {
-	font-family: "Lato", sans-serif;
-	line-height: 1;
-	font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
 }
+
 a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
+
 img {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
+
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
+
 input,
 textarea,
 button {
-	outline: none;
-	box-shadow: none;
-	font-family: "Lato", sans-serif;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Lato", sans-serif;
 }
+
+/* color */
 /* Your style start from here */
+/* Header */
+.container-header {
+  width: 150rem;
+  height: 80rem;
+  background-color: red;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container-header .logo {
+  max-width: 41rem;
+  height: 20.5rem;
+  position: absolute;
+  z-index: 1;
+  left: 12.5rem;
+}
+
+.container-header .contact {
+  height: 3rem;
+  width: 100%;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.container-header .contact .clock {
+  margin-right: 4.5rem;
+}
+
+.container-header .contact .clock .clock-icon {
+  color: #e7a331;
+}
+
+.container-header .contact .phone .phone-icon {
+  color: #e7a331;
+}
+
+.container-header .contact .social {
+  right: 16.5rem;
+  color: #e7a331;
+  position: absolute;
+}
+
+.container-header .contact .social .social-item {
+  margin-right: 1.5rem;
+}
+
+.container-header .menu {
+  font-size: 17px;
+}
+
+.container-header .menu ul {
+  list-style: none;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
